@@ -11,7 +11,7 @@ st.title('Analyse du dataset Voiture')
 
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv',sep=',')
 
-df_voiture
+
 
 ###################################
 #### SIDE BAR ET RADIO BUTTON #####
@@ -31,7 +31,7 @@ if region_f == 'All':
 else:
     filtered_data = df_voiture.loc[df_voiture['continent'].str.contains(region_f)]
     
-
+filtered_data
 ##########################
 ###### GRAPHIQUES#########
 ##########################
